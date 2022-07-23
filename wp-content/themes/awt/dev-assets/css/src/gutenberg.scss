@@ -1,0 +1,17 @@
+// Gutenberg color options
+// -- see editor-color-palette in functions.php
+$colors: ( awt-white, $white ),
+	( awt-black, $black );
+
+
+/* Color Options
+--------------------------------------------- */
+
+@each $name, $color in $colors {
+	.has-#{$name}-color {
+		color: $color;
+	}
+	.has-#{$name}-background-color {
+		background-color: $color;
+	}
+}

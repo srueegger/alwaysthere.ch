@@ -1,0 +1,22 @@
+/* Import Variables */
+@import "variables";
+
+/* Import Third-Party CSS */
+@import  "../../../node_modules/bootstrap/scss/bootstrap";
+
+/* Import Global Stylesheets */
+@import "global";
+/* purgecss start ignore */
+@import "gutenberg";
+/* purgecss end ignore */
+
+/* Import Blocks */
+
+
+/* CSS Animationen von animate.css importieren */
+/* purgecss start ignore */
+@import "../../../node_modules/animate-sass/helpers/settings";
+@import "../../../node_modules/animate-sass/helpers/mixins";
+@import "../../../node_modules/animate-sass/helpers/base";
+@import "../../../node_modules/animate-sass/animate";
+/* purgecss end ignore */
