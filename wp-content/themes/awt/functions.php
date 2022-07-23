@@ -35,12 +35,12 @@ function theme_setup(){
 		array(
 			'name'  => __( 'Schwarz', 'awt-theme' ),
 			'slug'  => 'awt-black',
-			'color'	=> '#F8F8F8',
+			'color'	=> '#000',
 		),
 		array(
 			'name'  => __( 'Weiss', 'awt-theme' ),
 			'slug'  => 'awt-white',
-			'color' => '#BB1133',
+			'color' => '#fff',
 		)
 	) );
 }
@@ -89,8 +89,7 @@ add_action( 'wp_enqueue_scripts', 'awt_style_and_scripts' );
  ***************************************/
 function awt_register_menus() {
 	$args = array(
-		'socialmenu' => __( 'Social Media Menü' ),
-		'footermenu' => __( 'Footer Menü' )
+		'socialmenu' => __( 'Social Media Menü' )
 	);
 	register_nav_menus( $args );
 }
@@ -129,10 +128,11 @@ add_action( 'init', 'awt_remove_default_taxonomies' );
 /***************************************
  * 	Remove unused Admin Menu Pages
  ***************************************/
-function mf_remove_menus(){
+function awt_remove_menus(){
 	remove_menu_page( 'edit-comments.php' );		//Comments
+	remove_menu_page( 'edit.php' );
 }
-add_action( 'admin_menu', 'mf_remove_menus' );
+add_action( 'admin_menu', 'awt_remove_menus' );
 
 
 /***************************************
@@ -142,7 +142,7 @@ function awt_widgets_init() {
  
 	register_sidebar( array(
 			'name' => __( 'Header', 'awt-theme' ),
-			'id' => 'topmenu-widgets',
+			'id' => 'header',
 			'description' => __( 'Widgets für den Header', 'awt-theme' ),
 			'before_widget' => '',
 			'after_widget' => '',
@@ -152,7 +152,7 @@ function awt_widgets_init() {
 
 	register_sidebar( array(
 		'name' => __( 'Footer', 'awt-theme' ),
-		'id' => 'footer-column-1',
+		'id' => 'footer',
 		'description' => __( 'Widgets für den Footer', 'awt-theme' ),
 		'before_widget' => '',
 		'after_widget' => '',

@@ -1,0 +1,39 @@
+#siteheader {
+  img {
+    max-width: 583px;
+  }
+}
+
+.linktree {
+  .grid {
+    --bs-gap: 0 0;
+  }
+  a {
+    height: 571px;
+    border: 1px solid $white;
+    p {
+      @include font-size(1.813rem);
+      letter-spacing: 2px;
+      bottom: 50%;
+      transform: translateY(50%);
+    }
+  }
+}
+
+#sitefooter {
+  .menu {
+    text-align: center;
+    @extend .list-inline;
+    .menu-item {
+      @extend .list-inline-item;
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      &:not(:last-of-type) {
+        margin-right: 50px;
+      }
+    }
+  }
+}

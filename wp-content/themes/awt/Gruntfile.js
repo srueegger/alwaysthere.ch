@@ -18,7 +18,6 @@ module.exports = function( grunt ) {
             basetheme: {
                 src: [
                     'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
-                    'node_modules/jquery-aniview/dist/jquery.aniview.js',
                     'dev-assets/js/_vendor/*.js',
                     'dev-assets/js/src/main.js',
                 ],
@@ -71,7 +70,7 @@ module.exports = function( grunt ) {
         purgecss: {
             my_target: {
                 options: {
-                    safelist: ['menu', 'menu-item', 'show', 'g-col-lg-6', 'g-col-lg-8', 'g-col-lg-4', 'h2', 'animation-delay-1', 'animation-delay-2', 'animation-delay-3', 'av-container', 'av-visible'],
+                    safelist: ['h2', 'menu', 'menu-item'],
                     content: ['./**/*.php']
                 },
                 files: {

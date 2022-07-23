@@ -10,3 +10,10 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
+    <header id="siteheader" class="container">
+      <div class="grid">
+        <div class="g-col-12">
+          <?php dynamic_sidebar( 'header' ); ?>
+        </div>
+      </div>
+    </header>
