@@ -1,0 +1,95 @@
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+# =========================
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+
+.idea
+parameters.json
+core
+vendor
+composer.lock
+
+# =========================
+# Project Files
+# =========================
+
+*.log
+/*.html
+/*.txt
+/*.php
+sitemap.xml
+sitemap.xml.gz
+
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/*
+wp-content/languages/
+wp-content/wp-cache-config.php
+
+
+wp-includes/
+wp-admin/
+.sass-cache/
+.idea/
+node_modules/
+bower_components/
+wp-content/plugins/*
+!wp-content/plugins/lk-cpt-tax/
+.htaccess
+wp-content/themes/awt/package-lock.json
+wp-content/themes/awt/dist-assets/js/theme.min.js
+wp-content/themes/awt/dist-assets/css/theme.min.css
+wp-content/themes/awt/dev-assets/js/theme.js
+wp-content/themes/awt/dev-assets/css/theme.css.map
+wp-content/themes/awt/dev-assets/css/theme.css
+wp-content/themes/awt/dist-assets/css/theme-purge.min.css
+wp-content/themes/awt/dev-assets/css/theme-purge.css
+!wincode.php
