@@ -70,7 +70,7 @@ module.exports = function( grunt ) {
         purgecss: {
             my_target: {
                 options: {
-                    safelist: ['h2', 'menu', 'menu-item'],
+                    safelist: ['h2', 'menu', 'menu-item', 'animation-left', 'animation-right', 'animation-up', 'animation-down'],
                     content: ['./**/*.php']
                 },
                 files: {

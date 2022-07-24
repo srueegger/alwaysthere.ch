@@ -11,11 +11,27 @@
   a {
     height: 571px;
     border: 1px solid $white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .5s;
+    overflow: hidden;
     p {
       @include font-size(1.813rem);
       letter-spacing: 2px;
       bottom: 50%;
-      transform: translateY(50%);
+      right: 50%;
+      transform: translate(50%, 50%);
+    }
+    &.animation-left,
+    &.animation-right {
+      background-position-y: center;
+    }
+    &.animation-up,
+    &.animation-down {
+      background-position-x: center;
+    }
+    &:hover {
+      background-position: center center !important;
     }
   }
 }
