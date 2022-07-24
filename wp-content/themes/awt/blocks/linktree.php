@@ -29,8 +29,8 @@ if( !empty($block['align']) ) {
       $link_target = $link['target'] ? $link['target'] : '_self';
       $img = get_sub_field( 'img' );
       $animation_direction = esc_attr( get_sub_field( 'animation_side' ) );
-      echo '<div class="g-col-12 g-col-lg-6">';
-      echo '<a style="background-image: url(' . esc_url( $img['url'] ) . ');" class="d-block linktree-item position-relative animation-' . $animation_direction . '" href="' . esc_url( $link['url'] ) . '" target="' . $link_target . '">';
+      echo '<div class="g-col-12 g-col-md-6">';
+      echo '<a style="background-image: url(' . esc_url( $img['sizes']['large'] ) . ');" class="d-block linktree-item position-relative animation-' . $animation_direction . '" href="' . esc_url( $link['url'] ) . '" target="' . $link_target . '">';
       echo '<p class="mb-0 text-center fw-bold text-uppercase position-absolute">' . esc_attr( $link['title'] ) . '</p>';
       echo '</a></div>';
     }

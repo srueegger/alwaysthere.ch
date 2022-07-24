@@ -1,0 +1,58 @@
+{
+    "key": "group_62dd6efac61b8",
+    "title": "Link Icon",
+    "fields": [
+        {
+            "key": "field_62dd6f31177a9",
+            "label": "Icon",
+            "name": "icon",
+            "type": "font-awesome",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "icon_sets": [
+                "brands"
+            ],
+            "custom_icon_set": "",
+            "default_label": "&lt;i class=\"fa-brands fa-instagram fa-fw\"&gt;&lt;\/i&gt; Instagram",
+            "default_value": "{ \"style\" : \"brands\", \"id\" : \"instagram\", \"label\" : \"Instagram\", \"unicode\" : \"f16d\" }",
+            "save_format": "class",
+            "allow_null": 0,
+            "show_preview": 1,
+            "enqueue_fa": 0,
+            "fa_live_preview": "",
+            "choices": []
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "nav_menu_item",
+                "operator": "==",
+                "value": "location\/socialmenu"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1658679202
+}

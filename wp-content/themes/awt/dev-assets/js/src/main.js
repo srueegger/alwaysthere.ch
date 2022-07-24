@@ -11,7 +11,7 @@
   function awt_linktree_animation_calculation() {
     if( $( '.linktree' ).length ) {
       let item = $( '.linktree .linktree-item:first-of-type' );
-      let height = item.outerHeight();
+      let height = item.outerHeight() * 2;
       let width = item.outerWidth() * 2;
       $( '.linktree-item' ).each( function() {
         if( $( this ).hasClass( 'animation-left' ) ) {
